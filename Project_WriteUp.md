@@ -1,8 +1,8 @@
-> Overview :- 
+> ## Overview :- 
 
 This To-Do List app was designed with a focus on user experience and functionality, employing modern development practices with Flutter and GetX for state management.The primary goal was to create a user-friendly and efficient task management system that includes essential features like task creation, editing, deletion, sorting, and notifications. Here’s a detailed explanation of the design decisions and thought process that guided the development of the app.
 
-> Design Decisions :- 
+> # Design Decisions :- 
 
 1. State Management with GetX :- 
 
@@ -40,6 +40,6 @@ This To-Do List app was designed with a focus on user experience and functionali
 
 
 
-> Conclusion :-
+> # Conclusion :-
 
 This To-Do List app is designed to be both functional and user-friendly, incorporating features and design elements that cater to real-world task management needs. By leveraging Flutter’s capabilities and GetX’s efficient state management, the app provides a smooth and responsive user experience. The thoughtful integration of sorting, filtering, and notifications ensures that users can manage their tasks effectively and stay organized.
