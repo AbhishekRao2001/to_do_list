@@ -3,13 +3,14 @@
 
 ## Overview
 
-The To-Do List app is a modern task management application built with Flutter and GetX for state management. It allows users to efficiently manage their tasks, set priorities, and receive notifications for due dates. The app offers robust features including task creation, editing, sorting, and real-time search functionality.
+The To-Do List app is a task management application built using Flutter and GetX for state management. This app allows users to manage tasks efficiently, set priorities, and receive notifications when tasks are due. The app uses Hive for persistent local storage, ensuring tasks are saved even after the app is closed.
 
 # Features
 
 - **Task Management**: Create, edit, and delete tasks with a title, description, due date, and priority.
 - **Search Functionality**: Filter tasks by title or description in real-time.
 - **Task Sorting**: Sort tasks by priority, due date, or creation date.
+- **Local Storage with Hive**: All tasks are stored locally using Hive, ensuring data persistence without an internet connection.
 - **Notifications**: Receive notifications for tasks based on their due dates.
 - **Custom UI**: A visually appealing and user-friendly interface with a custom AppBar design.
 
@@ -40,6 +41,7 @@ flutter pub get
 2. **Create and Manage Tasks:** Use the app to add, edit, or delete tasks. Set priorities and due dates as needed.
 3. **Search and Sort Tasks:** Use the search bar to filter tasks and the sort options to organize them according to your preference.
 4. **Notifications:** Grant notification permissions when prompted to receive reminders for upcoming tasks.
+5. **Persistent Local Storage:** Tasks are saved locally using Hive, ensuring they persist across app sessions.
 
 ## Project Structure
 
