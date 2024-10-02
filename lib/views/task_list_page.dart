@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/task_controller.dart';
 import 'edit_task_page.dart'; // Page for editing tasks
+import 'hive_database_viewer.dart'; // Import the HiveDatabaseViewer
 import '../utils/permission_service.dart'; // Import the permission service
 
 class TaskListPage extends StatefulWidget {
@@ -49,6 +50,13 @@ class _TaskListPageState extends State<TaskListPage> {
                     child: Text('Sort by Creation Date'),
                   ),
                 ],
+              ),
+              IconButton(
+                icon: const Icon(Icons.view_list),
+                onPressed: () {
+                  // Navigate to the Hive Database Viewer
+                  Get.to(HiveDatabaseViewer());
+                },
               ),
             ],
           ),

@@ -6,10 +6,15 @@ import '../utils/storage_service.dart';
 class TaskBindings extends Bindings {
   @override
   void dependencies() {
-    // Register TaskController, NotificationService, and StorageService
-    Get.lazyPut<TaskController>(() => TaskController()); // Using lazyPut to initialize TaskController when needed
-    Get.lazyPut<NotificationService>(() => NotificationService()); // Same for NotificationService
+    // Register StorageService first
     Get.lazyPut<StorageService>(() => StorageService()); // Same for StorageService
+
+    // Register TaskController with StorageService
+    Get.lazyPut<TaskController>(() => TaskController(storageService: Get.find<StorageService>())); // Pass StorageService instance
+
+    // Register NotificationService
+    Get.lazyPut<NotificationService>(() => NotificationService()); // Same for NotificationService
   }
 }
+
 
