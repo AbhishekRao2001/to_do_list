@@ -51,13 +51,13 @@ class _TaskListPageState extends State<TaskListPage> {
                   ),
                 ],
               ),
-              IconButton(
-                icon: const Icon(Icons.view_list),
-                onPressed: () {
-                  // Navigate to the Hive Database Viewer
-                  Get.to(HiveDatabaseViewer());
-                },
-              ),
+              // IconButton(
+              //   icon: const Icon(Icons.view_list),
+              //   onPressed: () {
+              //     // Navigate to the Hive Database Viewer
+              //     Get.to(HiveDatabaseViewer());
+              //   },
+              // ),
             ],
           ),
         ),
